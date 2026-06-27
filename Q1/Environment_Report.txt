@@ -1,0 +1,19 @@
+Environment Verification Report
+
+1. Username & Groups: id
+uid=197609(Asus) gid=197121 groups= 197121
+
+2.Current Shell: echo $SHELL
+ /usr/bin/bash
+
+3. Current working Directory: pwd
+  /c/User/Asus/CLI-Graded-Assignment/Q1
+
+4. List of Files & Directories: ls -la
+total 0
+drwxr-xr-x 1 Asus 197121 0 Jun 23 19:52 _/
+drwxr-xr-x 1 Asus 197121 0 Jun 23 19:52 _ _/
+
+5. Network Connectivity Verifciation: ping -n 4 google.com
+
+  4 packets trasnmitted , 4 received , 0% loss
