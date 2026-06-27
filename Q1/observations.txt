@@ -1,0 +1,24 @@
+Command: id
+
+Observation:
+This command displayed the current user ID, group ID, and group membership information. It confirmed the account being used in the environment.
+
+Command: echo $SHELL
+
+Observation:
+This command displayed the active shell. The output showed that Bash is being used as the command interpreter.
+
+Command: pwd
+
+Observation:
+This command displayed the present working directory. It confirmed the location where all assignment files are stored.
+
+Command: ls -la
+
+Observation:
+This command listed all files and directories in the current workspace, including hidden entries. It helped verify the contents of the folder.
+
+Command: ping -n 4 google.com
+
+Observation:
+This command tested network connectivity by sending four packets to google.com. All packets were received successfully, confirming internet connectivity.
