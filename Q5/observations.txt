@@ -1,0 +1,22 @@
+Command: lsblk
+
+Observation:
+This command displayed available storage devices and their partition structure.
+
+Command: df -h
+
+Observation:
+The command displayed mounted file systems and disk usage information in human-readable format.
+
+Command: df -i
+
+Observation:
+This command displayed inode allocation and utilization statistics.
+
+Command: vi Storage_Assessment_Report.txt
+
+Observation:
+The vi editor was used to create and edit the storage assessment report as required by the assignment.
+
+Overall Observation:
+The system storage resources were examined, mounted file systems were identified, and inode utilization was reviewed to assess storage health.
