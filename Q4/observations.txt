@@ -1,0 +1,29 @@
+Command: lsof | head
+
+Observation:
+This command displayed a sample list of open files currently used by running processes.
+
+Command: ls -l /proc/self/fd
+
+Observation:
+The command displayed file descriptors associated with the current shell process.
+
+Command: echo "This is output redirection" > output.txt
+
+Observation:
+Standard output was redirected into a file instead of being displayed on the terminal.
+
+Command: ls nonexistentfile 2> error.txt
+
+Observation:
+The error message was redirected to error.txt using standard error redirection.
+
+Command: ls output.txt nonexistentfile > all_output.txt 2>&1
+
+Observation:
+Both output and error messages were redirected into a single file.
+
+Command: ulimit -a
+
+Observation:
+The command displayed current resource limits configured for the shell environment.
