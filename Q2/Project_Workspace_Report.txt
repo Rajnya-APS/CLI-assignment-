@@ -1,0 +1,30 @@
+nano Project_Workspace_Report.txt
+Secure Project Workspace Report
+
+1. Directory Structure Created
+ProjectWorkspace
+  Documents
+  Reports
+
+2. Permissions Before Modification: ls-ld ProjectWorkspace
+Default permissions were assigned automatically by the system when the directory was created.
+  output: drwxr-xr-x ProjectWorkspace
+
+3. Permissions After Modification: chmod 700 ProjectWorkspace, ls -ld ProjectWorkspace
+output: drwx------ ProjectWorkspace
+
+Permission changed using chmod 700 ProjectWorkspace.
+Owner: Read, Write, Execute
+Group: No Permission
+Others: No Permission
+
+4. Ownership Details
+Owner: noble@Asus-Ankita
+Group: noble@Asus-Ankita
+
+5. Umask Value Used: umask
+output: 0022
+Write the output of the umask command here.
+
+6. Security Purpose
+Restrictive permissions protect the workspace so only the owner can access it.
