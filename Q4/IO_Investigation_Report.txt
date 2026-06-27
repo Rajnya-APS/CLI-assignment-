@@ -1,0 +1,51 @@
+IO Investigation Report
+
+1. Open Files Identified
+
+Command:
+lsof | head
+
+Observation:
+The command displayed files currently opened by running processes in the Linux system.
+
+2. File Descriptor Observations
+
+Command:
+ls -l /proc/self/fd
+
+Observation:
+File descriptor 0 represents standard input (stdin).
+File descriptor 1 represents standard output (stdout).
+File descriptor 2 represents standard error (stderr).
+
+3. Output Redirection and Error Redirection Results
+
+Output Redirection:
+echo "This is output redirection" > output.txt
+
+Result:
+The command output was successfully written into output.txt.
+
+Error Redirection:
+ls nonexistentfile 2> error.txt
+
+Result:
+The error message was redirected to error.txt instead of appearing on the terminal.
+
+Combined Redirection:
+ls output.txt nonexistentfile > all_output.txt 2>&1
+
+Result:
+Both standard output and standard error were redirected into a single file.
+
+4. Resource Limits Observed
+
+Command:
+ulimit -a
+
+Observation:
+The command displayed resource limits such as maximum open files, stack size, process limits, and memory constraints.
+
+5. How Linux Manages File I/O
+
+Linux manages input and output using file descriptors. Standard input, standard output, and standard error are represented by descriptors 0, 1, and 2 respectively. Redirection operators allow output and errors to be written to files instead of the terminal. Resource limits control the amount of system resources available to processes.
