@@ -1,0 +1,39 @@
+Command: echo "This is the original file" > original.txt
+
+Observation:
+A text file named original.txt was created and populated with sample content.
+
+Command: ln original.txt hardlink.txt
+
+Observation:
+A hard link was created. Both files point to the same inode and underlying data.
+
+Command: ln -s original.txt symlink.txt
+
+Observation:
+A symbolic link was created that references the path of the original file.
+
+Command: ls -li
+
+Observation:
+The inode numbers showed that the hard link shared the same inode as the original file, while the symbolic link had a different inode.
+
+Command: stat
+
+Observation:
+Metadata such as inode number, permissions, ownership, and timestamps was collected.
+
+Command: rm original.txt
+
+Observation:
+The original file was deleted to study link behavior.
+
+Command: cat hardlink.txt
+
+Observation:
+The hard link remained accessible because it still pointed to the original inode.
+
+Command: cat symlink.txt
+
+Observation:
+The symbolic link became invalid because its target file no longer existed.
